@@ -1,0 +1,12 @@
+﻿@page "{instanceId?}"
+@model OrderStatusModel
+
+<h1>Order Status</h1>
+@if (Model.Status == null)
+{
+    <p>Loading status...</p>
+}
+else
+{
+    <p>@Model.Status</p>
+}
